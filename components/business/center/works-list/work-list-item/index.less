@@ -1,0 +1,133 @@
+
+@work-list-item-width: 320px;
+@work-list-item-height: 255px;
+
+
+// 当前作品
+.work-list-item {
+  width: @work-list-item-width;
+  height: @work-list-item-height;
+  border-radius: 5px;
+  overflow: hidden;
+  border:1px solid rgba(112,112,112,1);
+  padding: 12px 13px 13px 12px;
+  position: relative;
+  > div {
+    height: 100%;
+    position: relative;
+  }
+  .work-img-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    > section {
+      width: 295px;
+      &:first-of-type {
+        height: 161px;
+        margin-bottom: 6px;
+      }
+      &:last-of-type {
+        height: 63px;
+        img {
+          float: left;
+          margin-right: 3px;
+          width: 96px;
+          height: 63px;
+          &:last-of-type {
+            margin-right: 0;
+          }
+        }
+      }
+      img {
+        width: 100%;
+      }
+      overflow: hidden;
+    }
+  }
+  .work-list-tool-modal {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    .work-list-item-name {
+      position: absolute;
+      left: 18px;
+      top: 170px;
+      height: 24px;
+      line-height: 24px;
+      font-size: 18px;
+      color: #fff;
+    }
+    .work-list-number {
+      position: absolute;
+      left: 21px;
+      bottom: 35px;
+      height:19px;
+      font-size:14px;
+      font-weight:400;
+      line-height:19px;
+      color:rgba(255,255,255,1);
+    }
+    .work-list-item-date {
+      position: absolute;
+      left: 21px;
+      top: 14px;
+      height:19px;
+      line-height:19px;
+      font-size:14px;
+      font-weight:400;
+      color:rgba(255,255,255,1);
+    }
+    .work-list-item-auth {
+      position: absolute;
+      left: 21px;
+      top: 40px;
+      height:19px;
+      line-height:19px;
+      font-size:14px;
+      font-weight:400;
+      color:rgba(255,255,255,1);
+      i.anticon {
+        margin-right: 5px;
+        cursor: pointer;
+      }
+    }
+    .operation-of-work-list-item {
+      position: absolute;
+      right: 16px;
+      top: 13px;
+      width:30px;
+      height:12px;
+      line-height:12px;
+      text-align: center;
+      background:rgba(255,255,255,0.35);
+      border-radius: 5px;
+      cursor: pointer;
+      .dropdown-inner {
+        display: block;
+        transform: translateY(-5px);
+        font-size: 18px;
+      }
+    }
+    &.view-by-self {
+      .work-item-name {
+        top: auto;
+        bottom: 93px;
+      }
+    }
+  }
+  &:hover, &.active {
+    .work-list-tool-modal {
+      opacity: 1;
+    }
+  }
+}

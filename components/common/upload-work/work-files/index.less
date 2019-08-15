@@ -1,0 +1,109 @@
+.work-files {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100px;
+  padding: 0 10px;
+  .ant-upload.ant-upload-select {
+    width: 100%;
+  }
+  .work-files-upload {
+    height: 110px;
+    .upload-item {
+      cursor: pointer;
+      height: 40px;
+      &:first-of-type {
+        margin: 0 0 30px 0;
+      }
+      .upload-text {
+        float: left;
+        height: 100%;
+        strong {
+          display: block;
+          height:20px;
+          font-size:16px;
+          font-weight:300;
+          color:rgba(0,0,0,1);
+          margin-bottom: 3px;
+        }
+        small {
+          font-size:14px;
+          font-weight:300;
+          color:rgba(191,191,191,1);
+        }
+        &:first-of-type {
+          width: 35px;
+          line-height: 40px;
+          text-align: center;
+          i.iconfont {
+            color: @theme-color;
+          }
+        }
+        &:last-of-type {
+          width: calc(100% - 40px);
+          transform: translateX(5px);
+        }
+      }
+    }
+  }
+
+  .work-files-list {
+    max-height: 320px;
+    margin-top: 30px;
+    overflow: auto;
+    .file-item {
+      height: 80px;
+      background: #F5F5F5;
+      position: relative;
+      &:not(:last-of-type) {
+        border-bottom:1px solid rgba(229,229,229,1);
+      }
+      .file-type {
+        //background: #0869C9;
+        float: left;
+        height: 100%;
+        color: #ffffff;
+        width:21px;
+        height:21px;
+        line-height:21px;
+        font-size: 12px;
+        text-align: center;
+        background:rgba(8,105,201,1);
+        border-radius:2px;
+        margin: 30px 13px 0 18px;
+        small {
+          transform: scale(0.7);
+          display: inline-block;
+        }
+      }
+      .file-info {
+        float: left;
+        height: 100%;
+        padding: 23px 0;
+        .file-name {
+          font-size:12px;
+          font-weight:400;
+          display: block;
+          color:rgba(155,155,155,1);
+        }
+        .file-status {
+          height:12px;
+          font-size:12px;
+          font-weight:400;
+          color:rgba(0,0,0,1);
+        }
+      }
+      .delete-file {
+        position: absolute;
+        right: 12px;
+        top: 24px;
+        font-size:12px;
+        font-weight:400;
+        color:rgba(188,188,188,1);
+        cursor: pointer;
+      }
+
+    }
+  }
+}

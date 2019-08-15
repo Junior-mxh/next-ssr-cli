@@ -1,0 +1,16 @@
+
+// 重置弹窗关闭按钮位置
+.reset-close-position {
+  .ant-modal-close{
+    transform: translate(45px, -20px);
+    color: #fff;
+    &:hover {
+      color: #ffffff;
+    }
+  }
+}
+
+// 弹窗宽度内容变化缓慢
+.ant-modal, .ant-modal-body {
+  transition: width ease-in-out 0.3s;
+}

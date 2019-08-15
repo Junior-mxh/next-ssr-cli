@@ -1,0 +1,198 @@
+//@ossBaseURL: 'https://shijue-static-dev.oss-cn-beijing.aliyuncs.com/shijue';
+.login-wrapper{
+  position: relative;
+  padding-top: 100px;
+  background: url(~'@{ossBaseURL}/login/login-bg.png') center center;
+  //background: @ossBaseURL;
+  min-height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  overflow: hidden;
+  .login-title{
+    width:600px;
+    margin: 0 auto;
+    .login-logo{
+      font-size: 16px;
+      font-weight:400;
+      color:rgba(68,68,68,1);
+      text-align: center;
+      img{
+        width: 204px;
+        height: 34px;
+        display: inline-block;
+      }
+      span{
+        height: 34px;
+        font-size:30px;
+        color:rgba(0,0,0,1);
+        position: relative;
+        bottom:8px;
+        margin-left: 20px;
+      }
+    }
+    .login-tip{
+      text-align: center;
+    }
+  }
+  .login-box{
+    width:600px;
+    min-height:560px;
+    background:rgba(255,255,255,1);
+    box-shadow:0px 2px 50px -26px rgba(0,0,0,0.44);
+    border-radius:18px;
+    margin:27px auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    .select-bar{
+      font-size:20px;
+      color:rgba(169,169,169,1);
+      width: 100%;
+      text-align: center;
+      span{
+        cursor: pointer;
+      }
+      .selected{
+        color:rgba(255,0,2,1);
+      }
+
+    }
+    .input-bar{
+      margin-top: 40px;
+      .input-item{
+        width:500px;
+        height:60px;
+        border-radius:8px;
+        border:2px solid rgba(234,234,234,1);
+        margin: 0 auto 18px;
+        .icon-bar{
+          display: inline-block;
+          height: 56px;
+          width: 56px;
+          line-height: 56px;
+          float: left;
+          text-align: center;
+        }
+        input{
+          border: none;
+          height: 56px;
+          float: left;
+        }
+      }
+      .code-wrapper{
+        margin: 0 auto;
+        width: 500px;
+        height: 60px;
+        .code-input{
+          width:330px;
+          height:60px;
+          border-radius:8px;
+          border:2px solid rgba(234,234,234,1);
+          text-indent: 20px;
+        }
+        .code-bar{
+          font-size:16px;
+          cursor: pointer;
+          margin-left:20px;
+          display: inline-block;
+          width:150px;
+          height:60px;
+          line-height: 60px;
+          background:@theme-color;
+          color: #ffffff;
+          border-radius:8px;
+          text-align: center;
+        }
+        .num-code-bar{
+          cursor: pointer;
+          display: inline-block;
+          margin-left:20px;
+          width: 150px;
+          height: 60px;
+          background-color:rgba(238,238,238,1);
+          line-height: 60px;
+          text-align: center;
+        }
+      }
+    }
+    .link-bar{
+      font-size:16px;
+      font-weight:400;
+      color:rgba(169,169,169,1);
+      width:500px;
+      margin:10px auto;
+      text-align: right;
+      span{
+        &:hover{
+          color:@theme-color;
+        }
+        cursor: pointer;
+      }
+    }
+    .login-btn{
+      width:500px;
+      height:60px;
+      line-height: 60px;
+      background:@theme-color;
+      border-radius:8px;
+      text-align: center;
+      font-size:22px;
+      margin: 48px auto;
+      color: #ffffff;
+      cursor: pointer;
+    }
+    .login-line{
+      width: 500px;
+      margin: 0 auto;
+      color:rgba(169,169,169,1);
+      font-size:14px;
+      .or{
+        position: relative;
+        top:3px
+      }
+      .dashed{
+        width: 240px;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(234, 234, 234, 1) 0%, rgba(234, 234, 234, 1) 50%, transparent 50%);
+        background-size: 8px 1px;
+        background-repeat: repeat-x;
+        display: inline-block;
+      }
+    }
+    .icon-wrapper{
+      margin:34px auto 0 ;
+      width: 150px;
+      .icon-item{
+        display: inline-block;
+        width:50px;
+        height:50px;
+        border-radius:25px;
+        background:rgba(221,221,221,1);
+      }
+    }
+  }
+  .login-footer{
+    text-align: center;
+    font-size:14px;
+    color:rgba(0,0,0,1);
+    margin-top: 90px;
+    div{
+      margin-bottom: 8px;
+    }
+  }
+
+  input::-webkit-input-placeholder{
+    color: rgba(169,169,169,1);
+  }
+
+  input:-moz-placeholder {
+    color: rgba(169,169,169,1);
+  }
+
+  input::-moz-placeholder{
+    color: rgba(169,169,169,1);
+  }
+
+  input:-ms-input-placeholder {
+    color: rgba(169,169,169,1);
+  }
+}

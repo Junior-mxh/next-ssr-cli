@@ -1,0 +1,71 @@
+.fans-item-work{
+  //margin-left: 20px;
+  //float: left;
+  display: inline-block;
+  //width:600px;
+  //height: 110px;
+  .swiper-container{
+    //height: 110px;
+    overflow: hidden;
+    //width: 590px;
+    .my-button-prev{
+      position: absolute;
+      left: 0px;
+      top:0;
+      right: auto;
+      width:30px;
+      background:rgba(0,0,0,0.4);
+      border-radius:3px;
+      z-index: 1;
+      .fans-icon{
+        //display: inline-block;
+        width:30px;
+        color: #ffffff;
+
+        cursor: pointer;
+        text-align: center;
+      }
+
+    }
+    .my-button-next{
+      position: absolute;
+      right: 0px;
+      top:0;
+      left: auto;
+      width:30px;
+      background:rgba(0,0,0,0.4);
+      border-radius:3px;
+      z-index: 1;
+      .fans-icon{
+        cursor: pointer;
+        display: inline-block;
+        width:30px;
+        color: #ffffff;
+        text-align: center;
+      }
+
+    }
+  }
+  .swiper-slide{
+    width: auto;
+  }
+  .my-work-item{
+    display: inline-block;
+    width:100%;
+    position: relative;
+    //height: 110px;
+    //.work-pic {
+    //  position: absolute;
+    //  left: 0;
+    //  top: 0;
+    //  right: 0;
+    //  bottom: 0;
+    //  margin: auto;
+    //  max-width: 100%;
+    //  max-height: 100%;
+    //}
+    &:not(:last-of-type) {
+      margin-right: 10px;
+    }
+  }
+}

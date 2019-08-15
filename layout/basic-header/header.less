@@ -1,0 +1,108 @@
+@header-height: 80px;
+@nav-height: 39px;
+@user-info-width: 260px;
+@paddingLeft: 76px;
+.basic-header-wrapper {
+  width: 100%;
+  height: @header-height;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+  &.noShadow {
+    box-shadow: none;
+  }
+  .basic-header {
+    height: 100%;
+    margin-left: @paddingLeft;
+    width: calc(~'100% - @{paddingLeft}');
+    padding: 0px 0 0 16px;
+
+    .logo {
+      width: 125px;
+      height: 29px;
+      margin: 25px 25px 0 0;
+      display: inline-block;
+      a {
+        display: block;
+        height: 100%;
+        img {
+          width: 100%;
+          height: 100%;
+          vertical-align: super;
+        }
+      }
+    }
+
+    .nav-list {
+      height: @nav-height;
+      min-width: 469px;
+      margin: 21px 0 0 0;
+      list-style: none;
+      padding: 0;
+      > li {
+        list-style: none;
+        line-height: @nav-height;
+        float: left;
+        padding: 0 20px 0 19px;
+        margin: 0;
+        font-size:16px;
+        font-weight:bold;
+        color:rgba(191,191,191,1);
+        a {
+          color:rgba(191,191,191,1);
+        }
+        &.active {
+          background:rgba(237,27,35,0.1);
+          color: @theme-color;
+          border-radius: 40px;
+          a {
+            color: @theme-color;
+          }
+        }
+      }
+    }
+
+    .headerRightModule {
+      width: @user-info-width;
+      height: @header-height;
+      > div {
+        height: 100%;
+      }
+      .userInfo {
+        width: 100px;
+        line-height: @header-height;
+        img {
+          width: 22px;
+          height: 22px;
+          cursor: pointer;
+          border-radius: 50%;
+          vertical-align: middle;
+        }
+        .notification {
+          margin-left: 25px;
+          display: inline-block;
+        }
+      }
+      .uploadWorks {
+        width: 160px;
+        .uploadElement {
+          display: block;
+          width: 160px;
+          height: 100%;
+          line-height: @header-height;
+          background:rgba(237,27,35,1);
+          font-size:16px;
+          font-weight:bold;
+          color:rgba(255,255,255,1);
+          text-indent: 23px;
+          border-radius: 160px 0 0 160px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: @screen-sm-min){
+    
+}
+@media only screen and (max-width: @screen-lg-min) {}

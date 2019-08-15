@@ -1,0 +1,208 @@
+.tab-sub-item {
+  float: left;
+  color: #BFBFBFFF;
+  height:19px;
+  font-size:14px;
+  font-weight:400;
+  line-height:19px;
+  color:rgba(191,191,191,1);
+  cursor: pointer;
+  transition: color ease 0.5s;
+  &:not(:last-of-type) {
+    margin-right: 33px;
+  }
+  &.active , &:hover{
+    color: #000;
+  }
+}
+
+
+// 时间戳原创印记文字
+.about-timestamp {
+  width: 100%;
+  min-height: 102px;
+  background: rgba(0, 0, 0, 0.03);
+  padding: 19px 18px 26px 25px;
+  margin-bottom: 90px;
+  > * {
+    float: left;
+  }
+  .tsa-logo {
+    width: 56px;
+    height: 54px;
+    margin-right: 32px;
+    transform: translateY(5px);
+  }
+  .tsa-info {
+    width: 90%;
+    strong {
+      display: block;
+      height:21px;
+      font-size:16px;
+      line-height:21px;
+      color:rgba(0,0,0,1);
+      margin-bottom: 13px;
+    }
+     span {
+       font-size:14px;
+       font-weight:400;
+       line-height:19px;
+       color:rgba(128,125,125,1);
+     }
+  }
+}
+
+// 账户信息介绍
+.about-item {
+  width: calc(100% / 4);
+  .tsa-icon {
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin: 0 auto 42px;
+    font-size: 60px;
+    color: #000;
+  }
+  p {
+    text-align: center;
+    height: 117px;
+    span {
+      font-size:16px;
+      font-weight:400;
+      line-height:30px;
+      color:rgba(112,112,112,1);
+      b {
+        font-size:16px;
+        font-weight:bold;
+        color:rgba(0,0,0,1);
+      }
+    }
+  }
+}
+
+// 个人信息 个人账户
+.account-user-info {
+  height: 207px;
+  width: 100%;
+  padding: 41px 0 0 55px;
+  background:rgba(0,0,0,0.03);
+  margin-bottom: 86px;
+  position: relative;
+  // 个人详细信息
+  .account-info-tips {
+    position: absolute;
+    left: 180px;
+    top: 13px;
+    width:482px;
+    height:90px;
+    background:rgba(255,255,255,1);
+    box-shadow:0px 3px 6px rgba(0,0,0,0.16);
+    border-radius:2px;
+    padding: 20px 0 0 29px;
+    font-size:14px;
+    font-weight:400;
+    line-height:28px;
+    color:rgba(128,125,125,1);
+    z-index: 20;
+  }
+  > section {
+    float: left;
+    height: 100%;
+    width: 50%;
+    .info-title {
+      display: inline-block;
+      height:21px;
+      font-size:16px;
+      font-weight:bold;
+      line-height:21px;
+      color:rgba(0,0,0,1);
+      margin-right: 15px;
+      margin-bottom: 24px;
+      small {
+        font-size:14px;
+        font-weight:400;
+        color:rgba(191,191,191,1);
+      }
+    }
+  }
+  .user-detail-info {
+    p {
+      font-size:14px;
+      font-weight:400;
+      color:rgba(0,0,0,1);
+      margin-bottom: 15px;
+      span:first-of-type {
+        display: inline-block;
+        width: 95px;
+      }
+    }
+  }
+  // 账户详细信息
+  .account-detail-info {
+    p {
+      height: 80px;
+      line-height: 80px;
+      > * {
+        float: left;
+      }
+      img {
+        width: 84px;
+        height: 80px;
+        margin-right: 33px;
+      }
+      >span {
+        font-size:16px;
+        font-weight:400;
+        color:rgba(0,0,0,1);
+        .highlight {
+          color: @theme-color;
+        }
+      }
+    }
+  }
+}
+
+
+// 购买选项
+.buyOptions {
+  margin-bottom: 120px;
+  > div {
+    float: left;
+    width: 299px;
+    margin-right: 54px;
+    &:last-of-type {
+      margin-right: 0;
+    }
+    > strong {
+      display: block;
+      width:100%;
+      height:60px;
+      line-height:60px;
+      background:rgba(0,0,0,0.03);
+  text-align: center;
+      font-size:16px;
+      font-weight:bold;
+      color:rgba(0,0,0,1);
+      margin-bottom: 33px;
+    }
+    > div {
+      height: 26px;
+      line-height: 26px;
+      > section {
+        float: left;
+      }
+      section {
+        b {
+          font-size:14px;
+          font-weight:bold;
+          color:rgba(0,0,0,1);
+          margin-right: 28px;
+        }
+        &:last-of-type {
+          float: right;
+        }
+      }
+    }
+  }
+}
+

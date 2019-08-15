@@ -1,0 +1,1 @@
+export const CHANGE_TITLE = 'LOGIN/CHANGE_TITLE'

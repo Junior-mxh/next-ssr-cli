@@ -1,0 +1,42 @@
+/* 站点公共样式 */
+
+
+body{
+    font-family:@font-family-common;
+}
+
+.vcg-app {
+    min-width: 1380px;
+}
+
+/* 清除浮动类 */
+.clearfix {
+    *zoom: 1;
+    &::before,
+    &::after {
+        display: table;
+        content: "";
+    }
+    &::after {
+        clear: both;
+    }
+}
+
+.fl {
+    float: left;
+}
+.fr{
+    float: right;
+}
+.font-w700{
+    font-weight: 700;
+}
+.font-w400{
+    font-weight: 400;
+}
+
+.text-overflow{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

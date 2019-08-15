@@ -1,0 +1,5 @@
+User-agent: *
+# 网站前期禁止所有爬虫爬取, 防止收录低质量内容
+# Allow: /
+Disallow: /
+# Sitemap: http://www.shijue.me/sitemap.xml

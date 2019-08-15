@@ -1,0 +1,163 @@
+.register-wrapper{
+  position: relative;
+  padding-top: 100px;
+  background: url(~'@{ossBaseURL}/login/login-bg.png') center center;
+  min-height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  overflow: hidden;
+  .register-title{
+    width:600px;
+    margin: 0 auto;
+    .register-logo{
+      font-size:16px;
+      font-weight:400;
+      color:rgba(68,68,68,1);
+      text-align: center;
+      img{
+        width: 204px;
+        height: 34px;
+        display: inline-block;
+      }
+      span{
+        height: 34px;
+        font-size:30px;
+        color:rgba(0,0,0,1);
+        position: relative;
+        bottom:8px;
+        margin-left: 20px;
+      }
+    }
+    .register-tip{
+      text-align: center;
+    }
+  }
+  .register-box{
+    width:600px;
+    min-height:560px;
+    background:rgba(255,255,255,1);
+    box-shadow:0px 2px 50px -26px rgba(0,0,0,0.44);
+    border-radius:18px;
+    margin:27px auto;
+    padding-top: 65px;
+    padding-bottom: 74px;
+
+    .input-bar{
+      .input-item{
+        width:500px;
+        height:60px;
+        border-radius:8px;
+        border:2px solid rgba(234,234,234,1);
+        margin: 0 auto 18px;
+        .icon-bar{
+          display: inline-block;
+          height: 56px;
+          width: 56px;
+          line-height: 56px;
+          float: left;
+          text-align: center;
+        }
+        input{
+          border: none;
+          height: 56px;
+          float: left;
+        }
+      }
+      .code-wrapper{
+        margin: 0 auto;
+        width: 500px;
+        height: 60px;
+        .code-input{
+          width:330px;
+          height:60px;
+          border-radius:8px;
+          border:2px solid rgba(234,234,234,1);
+          text-indent: 20px;
+        }
+        .code-bar{
+          font-size:16px;
+          cursor: pointer;
+          margin-left:20px;
+          display: inline-block;
+          width:150px;
+          height:60px;
+          line-height: 60px;
+          background:@theme-color;
+          color: #ffffff;
+          border-radius:8px;
+          text-align: center;
+        }
+        .num-code-bar{
+          cursor: pointer;
+          display: inline-block;
+          margin-left:20px;
+          width: 150px;
+          height: 60px;
+          background-color:rgba(238,238,238,1);
+          line-height: 60px;
+          text-align: center;
+        }
+      }
+    }
+    .tip-wrapper{
+      width:500px;
+      margin: 10px auto 0;
+      .ruler-bar{
+        float: left;
+        color:rgba(169, 169, 169, 1);
+        a{
+          color: rgba(73, 168, 221, 1);
+        }
+      }
+      .link-bar{
+        float: right;
+        font-size:16px;
+        color:rgba(169,169,169,1);
+        span{
+          &:hover{
+            color:@theme-color;
+          }
+          cursor: pointer;
+        }
+      }
+    }
+    .register-btn{
+      width:500px;
+      height:60px;
+      line-height: 60px;
+      background:@theme-color;
+      border-radius:8px;
+      text-align: center;
+      font-size:22px;
+      margin: 38px auto 0;
+      color: #ffffff;
+      cursor: pointer;
+    }
+
+  }
+  .register-footer{
+    text-align: center;
+    font-size:14px;
+    color:rgba(0,0,0,1);
+    margin-top: 90px;
+    div{
+      margin-bottom: 8px;
+    }
+  }
+
+  input::-webkit-input-placeholder{
+    color: rgba(169,169,169,1);
+  }
+
+  input:-moz-placeholder {
+    color: rgba(169,169,169,1);
+  }
+
+  input::-moz-placeholder{
+    color: rgba(169,169,169,1);
+  }
+
+  input:-ms-input-placeholder {
+    color: rgba(169,169,169,1);
+  }
+}

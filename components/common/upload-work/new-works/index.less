@@ -1,0 +1,103 @@
+
+
+@editor-height: 600px;
+@editor-left-width: 680px;
+@editor-left-margin-right: 25px;
+@editor-right-width: calc(~'100% - @{editor-left-width} - @{editor-left-margin-right}');
+.new-work-editor {
+  height: @editor-height;
+
+  .work-editor-left {
+    min-width: 680px;
+    width: @editor-left-width;
+    margin-right: @editor-left-margin-right;
+    float: left;
+    height: 100%;
+    .work-name {
+      height: 26px;
+      line-height: 26px;
+      margin-bottom: 27px;
+      input {
+        font-size:20px;
+        height: 100%;
+        width: 100%;
+        border: none;
+        outline: none;
+        font-weight:400;
+        color:rgba(0,0,0,1);
+        &:focus {
+          caret-color: rgba(191,191,191,1);
+        }
+        &::placeholder {
+          font-weight:400;
+          color:rgba(191,191,191,1);
+        }
+      }
+    }
+    .work-lead {
+      width: 100%;
+      margin: 0 0 7px 0;
+      textarea {
+        width: 100%;
+        height:60px;
+        background:rgba(245,245,245,1);
+        font-weight:300;
+        color:rgba(128,125,125,1);
+        font-size:14px;
+        resize: none;
+        padding: 15px;
+        border: none;
+        outline: none;
+        overflow-y: hidden;
+      }
+    }
+
+    .work-detail-editor {
+      height: 450px;
+      overflow: hidden;
+      margin: 0 0 14px 0;
+      @bar-height: 38px;
+      .bf-controlbar {
+        height: @bar-height !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+        border-bottom: 1px solid #F5F5F5;
+        border-top: 1px solid #F5F5F5;
+        .separator-line {
+          transform: translateY(12px);
+          height: 14px !important;
+        }
+        .control-item, > *, .dropdown-handler {
+          height: @bar-height !important;
+          line-height: @bar-height !important;
+          margin: 0 !important;
+          &:hover {
+            background: transparent !important;
+          }
+        }
+      }
+      .bf-content {
+        width: 100%;
+        overflow: auto !important;
+        height: 450px !important;
+      }
+    }
+
+    .work-operation-buttons {
+      text-align: center;
+    }
+  }
+
+
+
+
+  .work-editor-right {
+    min-width: 240px;
+    width: @editor-right-width;
+    float: left;
+    height: 100%;
+    position: relative;
+  }
+}
+
+
