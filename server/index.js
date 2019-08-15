@@ -5,7 +5,6 @@ const session = require('koa-session')
 const Router = require('./router.js')
 const bodyparser = require('koa-bodyparser')
 const  koaProxy = require('./proxy')
-const auth = require('./auth')
 const koaStatic = require('koa-static')
 const { port } = require('./config')
 
