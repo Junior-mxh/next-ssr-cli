@@ -5,7 +5,7 @@ import { Button } from 'antd'
 import Head from '~/components/head'
 import { connect } from 'react-redux'
 import dynamic from 'next/dynamic'
-const UploadWorks = dynamic(() => import('~/components/common/upload-work'))
+// const UploadWorks = dynamic(() => import('~/components/common/upload-work'))
 class Index extends React.Component {
 
   render () {
@@ -17,11 +17,11 @@ class Index extends React.Component {
       <div style={{width: '1000px', margin: '100px auto'}}>
         <Head {...tdk}/>
         <div>
-          <Link href='/login'>
-            <a>
-              <Button>这是首页, 登陆1</Button>
-            </a>
-          </Link>
+          {/* <Link href='/login'>*/}
+          {/*  <a>*/}
+          {/*    <Button>这是首页, 登陆1</Button>*/}
+          {/*  </a>*/}
+          {/* </Link>*/}
           <Button onClick={()=> window.location.href='/login'}>这是首页, 登陆2</Button>
           <Link href='/center/132324324234211/works'>
             <a>
@@ -45,7 +45,7 @@ class Index extends React.Component {
           </Link>
         </div>
         {/* 作品上传测试 */}
-        <UploadWorks />
+        {/* <UploadWorks />*/}
       </div>
     )
   }
