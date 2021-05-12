@@ -40,7 +40,7 @@
     "redux-devtools-extension": "^2.13.8",
     "redux-immutable": "^4.0.0",
     "redux-thunk": "^2.3.0",
-    "swiper": "^4.5.0",
+    "swiper": "^6.5.1",
     "throttle-debounce": "^2.1.0"
   },
   "devDependencies": {
